@@ -56,7 +56,7 @@ class VigenereCipheringMachine {
   encrypt(message, key) {
     //1.если str не строка, то нужно выбросить ошибку
     if (!message || typeof message != "string" || !key) {
-      throw new NotImplementedError("Incorrect arguments!");
+      throw new Error("Incorrect arguments!");
     }
 
     let result = "";
@@ -108,7 +108,7 @@ class VigenereCipheringMachine {
   decrypt(str, key) {
     //1.если str не строка, то нужно выбросить ошибку
     if (!str || typeof str != "string" || !key) {
-      throw new NotImplementedError("Incorrect arguments!");
+      throw new Error("Incorrect arguments!");
     }
 
     let result = "";
